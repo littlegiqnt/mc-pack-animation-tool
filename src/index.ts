@@ -83,5 +83,6 @@ await sharp({
     },
 })
     .composite(overlays)
+    .png()
     .toFile("output.png");
 console.log("Done.");
